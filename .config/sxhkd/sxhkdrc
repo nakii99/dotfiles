@@ -130,7 +130,7 @@ super + {Left,Down,Up,Right}
 
 # screenshot
 super + Print
-    maim -s -u | xclip -selection clipboard -t image/png -i
+    scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
 
 # change background
 super + n
