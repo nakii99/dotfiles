@@ -4,25 +4,35 @@
 xsetroot -cursor_name left_ptr
 
 # key bindings
+killall "sxhkd"
 sxhkd &
 
 # panel
+killall "polybar"
 ~/.config/polybar/launch.sh &
 
 # background changer
+killall "variety"
 variety &
 
 # xrandr
 xrandr --output eDP1 --panning 1600x900 --scale 1.171x1.171
 
 # compton
+killall "compton"
 compton &
 
 # Set some bsp specific stuff
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d 1 2 3 4 5 6 7
+bspc monitor DP1 -d 8 9 10
 
+
+bspc config top_padding 20
+bspc config bottom_padding 0
+bspc config left_padding 0
+bspc config right_padding 0
 bspc config window_gap 10
-bspc config border_width 1
+bspc config border_width 2
 
 bspc config split_ratio 0.62
 bspc config borderless_monocle true
@@ -32,3 +42,6 @@ bspc config pointer_modifier mod1
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
+
+bspc rule -a chromium desktop=^1
+bspc rule -a mpv state=fullscreen

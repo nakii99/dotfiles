@@ -26,6 +26,10 @@ super + shift + r
 super + x
     rofi_run -l
 
+#restart bspwm
+super + alt + r
+    bspc wm -r
+
 # close and kill
 super + {_,shift + }q
     bspc node -{c,k}
@@ -124,8 +128,13 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
     bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# screenshot
 super + Print
     maim -s -u | xclip -selection clipboard -t image/png -i
+
+# change background
+super + n
+    variety -n
 
 
 # volume control keys
