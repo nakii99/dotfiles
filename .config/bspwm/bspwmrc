@@ -47,5 +47,7 @@ bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 
-bspc rule -a alacritty desktop=^1
+#bspc rule -a Chromium desktop='^1' focus=on
+#bspc rule -a Alacritty desktop='^2' focus=on follow=on
 bspc rule -a mpv state=fullscreen
+

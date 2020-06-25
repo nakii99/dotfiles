@@ -137,6 +137,8 @@ Print
 super + n
     variety -n
 
+super + v
+    alacritty -e nvim
 
 # volume control keys
 XF86AudioMute
