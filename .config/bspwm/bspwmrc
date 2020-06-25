@@ -23,8 +23,8 @@ killall "picom"
 picom &
 
 # Set some bsp specific stuff
-bspc monitor -d 1 2 3 4 5 6 7
-bspc monitor DP1 -d 8 9 10
+bspc monitor -d 1 2 3 4 5 6 7 8
+bspc monitor DP1 -d 9 10
 
 
 bspc config top_padding 20
