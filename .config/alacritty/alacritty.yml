@@ -10,12 +10,16 @@ font:
                 style: Italic
 
         size: 9
-# Colors (Material Theme)
+
+background_opacity: 0.8
+# Colors (Nakii's Theme)
 colors:
   # Default colors
   primary:
-    background: '0x1e282d'
-    foreground: '0xc4c7d1'
+          #background: '0x1e282d'
+          #foreground: '0xc4c7d1'
+    background: '0x13242a'
+    foreground: '0xe5d7c5'
 
   # Normal colors
   normal:

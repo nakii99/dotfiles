@@ -130,8 +130,8 @@ super + {Left,Down,Up,Right}
     bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # screenshot
-super + Print
-    scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
+Print
+    xfce4-screenshooter
 
 # change background
 super + n
