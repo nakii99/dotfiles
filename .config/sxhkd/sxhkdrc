@@ -12,11 +12,12 @@ super + f
 
 # program launcher
 super + @space
-    rofi -show run
+   rofi -display-drun "Open: " -show drun -columns 4 -height 100px -show-icons -icon-theme "Papirus" 
+
 
 # program launcher
 alt + F1
-   rofi -show run 
+   rofi -display-drun "Open: " -show drun -columns 4 -height 100px -show-icons -icon-theme "Papirus" 
 
 # make sxhkd reload its configuration files:
 super + shift + r
